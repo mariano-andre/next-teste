@@ -3,13 +3,12 @@ import { useState } from "react";
 const Home = () =>{
     return (
         <div>
-            <div>Contador com React</div>
-            <Contador/>
+            <Header/>
         </div>
     )
 }
 
-function Contador(){
+function Header(){
     let [cont, setCont] = useState(1);
 
     const addCont=()=>{
