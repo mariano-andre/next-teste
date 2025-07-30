@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+    width: 100vw;
+    height: 20vh;
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes balanco {
+  0%   { transform: rotate(0deg);
+        transform: translateY(-2px); }
+
+  50%  { transform: rotate(30deg); 
+        transform: translateY(2px);}
+
+  100% { transform: rotate(0deg); 
+        transform: translateY(-2px);}
+}
+
+.titulo-animado {  
+    text-align: center;
+    animation: balanco 1s infinite ease-in-out;
+    position: relative;
+}

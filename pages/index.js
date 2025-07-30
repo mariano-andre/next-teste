@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Home = () =>{
+function Home(){
     return (
         <div>
             <Header/>
@@ -9,16 +9,9 @@ const Home = () =>{
 }
 
 function Header(){
-    let [cont, setCont] = useState(1);
-
-    const addCont=()=>{
-        setCont(cont+1)
-    }
-
     return(
-        <div>
-            <div>{cont}</div>
-            <input type='button' value='add' onClick={addCont}/>
+        <div className="header">
+            <h1 className="titulo-animado">Título Maneiro</h1>
         </div>
     )
 }
