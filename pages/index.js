@@ -3,7 +3,7 @@ import { useState } from "react";
 const Home = () =>{
     return (
         <div>
-            <div>Olá, mundo!</div>
+            <div>Contador com React</div>
             <Contador/>
         </div>
     )
